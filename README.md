@@ -11,8 +11,8 @@
  `sivreg` uses the moremata package. If it is not already installed, type "ssc install moremata" in
     Stata.
 
-## Installing `sivreg``
- The easiest way to install `sivreg` is via the Stata module `github`. Type the following code in Stata:
+## Installing `sivreg`
+ Way 1: Use the Stata module `github` to install `sivreg`. Type the following code in Stata:
  
  1. ```{js}
     net install github, from("https://haghish.github.io/github/")
@@ -21,17 +21,17 @@
     github install farbmacher/sivreg
     ```
 
- Alternatively, copy the sivreg.ado and sivreg.sthlp files into your personal ado folder or the working directory.
+ Way 2: Copy the sivreg.ado and sivreg.sthlp files into your personal ado folder or the current working directory.
 
 ## Example
  Let y be the outcome, d an endogenous regressor, x an exogenous control variable and z1 z2 z3 a set of
     potentially exogenous instruments, then the adaptive Lasso regression would be
         
-        ```
-        sivreg y d x, endog(d) exog(x z1 z2 z3) adaptive
-        ```
+    ```{js}
+    sivreg y d x, endog(d) exog(x z1 z2 z3) adaptive
+    ```
         
-## Reference
+## References
  * Windmeijer, F. et al. (2018): On the Use of the Lasso for Instrumental Variables Estimation with Some
              Invalid Instruments, *Journal of the American Statistical Association*, forthcoming.
  * Zou, H. (2006): The Adaptive Lasso and Its Oracle Properties, *Journal of the American Statistical
