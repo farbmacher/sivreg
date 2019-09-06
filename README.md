@@ -21,19 +21,19 @@
     github install farbmacher/sivreg
     ```
 
- Way 2: Copy the sivreg.ado and sivreg.sthlp files into your personal ado folder or the current working directory.
+ Way 2: Copy the `sivreg.ado` and `sivreg.sthlp` files into your personal ado folder or the current working directory.
 
 ## Example
- Let y be the outcome, d an endogenous regressor, x an exogenous control variable and z1 z2 z3 a set of
+ Let `y` be the outcome, `d` an endogenous regressor, `x` an exogenous control variable and `z1 z2 z3` a set of
     potentially exogenous instruments, then the adaptive Lasso regression would be
         
-    ```{js}
+ 1. ```{js}
     sivreg y d x, endog(d) exog(x z1 z2 z3) adaptive
     ```
         
 ## References
- * Windmeijer, F. et al. (2018): On the Use of the Lasso for Instrumental Variables Estimation with Some
+ * Windmeijer F., Farbmacher H., Davies N., Davey Smith G. (2019): On the Use of the Lasso for Instrumental Variables Estimation with Some
              Invalid Instruments, *Journal of the American Statistical Association*, forthcoming.
- * Zou, H. (2006): The Adaptive Lasso and Its Oracle Properties, *Journal of the American Statistical
+ * Zou H. (2006): The Adaptive Lasso and Its Oracle Properties, *Journal of the American Statistical
              Association* 101, 1418-1429.
- * Efron, B. et al. (2004): Least Angle Regression, *Annals of Statistics* 32, 407-499.
+ * Efron B., Hastie T., Johnstone I., Tibshirani R. (2004): Least Angle Regression, *Annals of Statistics* 32, 407-499.
