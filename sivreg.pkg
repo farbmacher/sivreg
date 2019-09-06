@@ -1,0 +1,10 @@
+v 1.1
+d 'SIVREG': Adaptive Lasso with some invalid instruments
+d 
+d Stata module to perform adaptive Lasso with some invalid instruments
+d 
+d Distribution-Date:   20190906
+d License: Creative Commons Attribution Share Alike 4.0
+d 
+F sivreg.ado
+F sivreg.sthlp
